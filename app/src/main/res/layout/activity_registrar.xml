@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/naranjaFondo"
+    android:orientation="vertical"
+    tools:context=".components.auth.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/yellow"
+            android:drawableStart="@drawable/perfilcustom"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/m"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/azul" />
+
+        <EditText
+            android:id="@+id/apellido"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/yellow"
+            android:drawableStart="@drawable/perfilcustom"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/m"
+            android:hint="Apellido"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/azul" />
+
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/yellow"
+            android:drawableStart="@drawable/emailcustom"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/m"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/azul" />
+
+        <EditText
+            android:id="@+id/cedula"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/yellow"
+            android:drawableStart="@drawable/emailcustom"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/m"
+            android:hint="cedula"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/azul" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/yellow"
+            android:drawableStart="@drawable/candadocustom"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/m"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/azul" />
+
+        <EditText
+            android:id="@+id/Rptpassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/yellow"
+            android:drawableStart="@drawable/candadocustom"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/m"
+            android:hint="Repetir Contraseña"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/azul" />
+
+        <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbConsu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:background="@color/yellow"
+            android:textColor="@color/azul"
+            android:text="Consumidor" />
+
+        <RadioButton
+            android:id="@+id/rbAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:background="@color/yellow"
+            android:textColor="@color/azul"
+            android:value="Administrador"
+            android:text="Administrador" />
+    </RadioGroup>
+        <Button
+            android:id="@+id/btnRegistar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/azul"
+            android:fontFamily="@font/ralebo"
+            android:onClick="registerUser"
+            android:text="Registrarse" />
+
+    </LinearLayout>
+</LinearLayout>
